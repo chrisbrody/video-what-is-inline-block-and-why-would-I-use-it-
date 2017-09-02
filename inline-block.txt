@@ -1,0 +1,69 @@
+#DISPLAY_INLINEBLOCK 1.1 - Intro to what is display: inline-block
+#DISPLAY_INLINEBLOCK 1.2 - Quick review of display property
+#DISPLAY_INLINEBLOCK 1.3 - What is inline-block
+#DISPLAY_INLINEBLOCK 1.4 - Examples of why to use inline-block
+#DISPLAY_INLINEBLOCK 1.5 - What to do with this knowledge
+#DISPLAY_INLINEBLOCK 1.6 - Outro to what is display: inline-block
+
+
+
+#DISPLAY_INLINEBLOCK 1.1 - Intro to what is display: inline-block
+Hey Chris from Codify Academy here, in this video I want to explore what happens to elements when we change their display value to inline-block; and how it differs from the block and inline value.
+
+
+
+#DISPLAY_INLINEBLOCK 1.2 - Quick review of display property
+first, we know the CSS property display determines, if an element takes up the full width of the screen, that would be a block element,  or if an element takes up just the space of the content, that would be an inline element. and all HTML elements have a default of block of inline.
+
+for example: divs by default are block elements and take up the full screen
+and spans by default are inline elements and take up the space of the content.
+
+We can also change the default values.
+
+
+
+#DISPLAY_INLINEBLOCK 1.3 - What is inline-block
+An inline block elements are the same as an inline element only we can apply a width and a height to inline-block and margin will affect the top and bottom of the element.
+Right so when would we want to change a value from inline to inline block or block to inline-block?
+
+
+
+#DISPLAY_INLINEBLOCK 1.4 - Examples of when to use block to inline-block
+lets take a look at this inline element first, this happens to be a span, but every inline element will behave the same way.
+EX:1 - video 2
+so we add margin and notice it only applys to the left and right sides its added to the top and bottom but its not happening because that's how a inline element acts.,
+I'll add a border to see the element a bit easier.
+add some padding and this one applies all around, but now we are inside of this another element
+and if we try a height, nothing changes.
+now lets add display inline-block. and wala, now the box model properties apply to the element properly!
+
+We get a visible height, and the margin and padding are applied correctly.
+
+So if you need to add box model properties like margin, padding, width or height, to and inline element, like images, spans or anchor tags, make sure to change that display from inline to inline-block.
+
+
+EX:2 - video 3
+Next lets look at this group of divs, We have a div to wrap, and three items.
+The content of each item takes up a full row bc they a div, a h2 and a p tag are all block element.
+
+Now lets imagine we want these 3 boxes to sit next to each other this is a very common on a site, and normally we'd add a float on the left and add a width to all the items.
+
+but the issue with that is the browser wont be able to determine the size of a wrapping element because of how floats behave. when you float elements other elements will no longer see or interact with them.
+
+so that means when we float the height of the wrap is 0, and when we use display: inline-block we can see the height is no longer zero but is again based on the elements inside again!
+
+
+EX:3 - video 4
+One other option is when using list items, sometimes you want to make all of them sit next to each other - like in the google replica, we went from the items one on top of each other, bc li elements are block elements, to the items one next to another in a neat line by adding display:inline-block to the li tags.
+
+
+#DISPLAY_INLINEBLOCK 1.5 - What to do with this knowledge
+Now that you know a bit more, I want to show you a goal you should have when building a website. don't put to much pressure on yourself to get this down right away, we are learning here.
+
+but we want to be able to scroll through a sit when its done and as we hover over wrapper elements, each section should clearly be blocked together, this is a good example of one. and here is a bad example, we can see the elements, but we had to do other CSS hacks to make it work, if we go back and use inline-block instead of floats on Google it will be easier to manage the elements as you style them.
+
+Unfortunately you're still more likely to see floats over inline-block when you look around at other website code and thats part of the reason we waited to talk about this.
+
+
+#DISPLAY_INLINEBLOCK 1.5 - Outro to what is display: inline-block
+Well that's it for now, hopefully, you'll remember when to use these but as always practice with it and review. and don't be afraid to try and get stuff wrong you can try applying display: block, inline or inline-block to any tag you want!
